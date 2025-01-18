@@ -8,7 +8,7 @@
 body{
     max-width: 1240px;
     margin: 0 auto;
-    font-family: Work Sans;
+    font-family: Poppins;
 }
 /* share style */
 .display-flex{
@@ -25,9 +25,8 @@ body{
 }
 .brand-name{
     color: var(--dark-one-color);
-    font-family: Work Sans;
     font-size: 2.188rem;
-    font-weight: 400;
+    font-weight: 500;
     text-align: center;
     /* margin: 0px; */
 }
@@ -88,6 +87,8 @@ color: rgb(225, 225, 225);
 font-weight: 700;
 border: 0;
 margin-top: 30px;
+font-weight: 700;
+cursor: pointer;
 }
 .introduction-image{
 }
@@ -114,11 +115,40 @@ justify-content: center;
 width:1000px;
 
 }
+/* features secton */
+.features{
+justify-content: space-evenly;
+margin: 120px 5px;
+}
+.features-heading{
+    color: rgb(10, 8, 38);
+    font-family: Poppins;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 3.8rem;
+    text-align: left;
+}
+.features-text{
+    color: rgb(108, 108, 108);
+    font-family: Poppins;
+    font-size: 0.75rem;
+    font-weight: 700;
+    line-height: 1.1rem;
+    text-align: left;
+    margin: 0;
+    width: 420px;
+}
+.features-text-content button{
+    border-radius: 8px;
+    color: white;
+    
+}
 
 /* footer */
 footer{
     background: rgb(10, 8, 38);
     height: 150px;
+    border-radius: 8px;
 }
 .footer-content{
 display: flex;
