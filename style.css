@@ -96,3 +96,22 @@ background: url(./images/Circle\ design.svg);
 background-size: cover;
 }
 
+/* section logos */
+.logos{
+    margin: 120px 5px;
+    flex-direction: row;
+    justify-content: center;
+}
+.web-logo{
+    gap: 30px;
+    height: 110px;
+    box-sizing: border-box;
+border: 1px solid rgba(14, 14, 14, 0.15);
+border-radius: 16px;
+background: rgb(255, 255, 255);
+align-items: center;
+justify-content: center;
+width:1000px;
+
+}
+
