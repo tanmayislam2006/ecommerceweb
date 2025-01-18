@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=Bebas+Neue&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=Bebas+Neue&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+:root{
+    --dark-one-color:rgb(58, 58, 58);
+    --dark-two-color:rgb(24, 25, 31);
+    --dar-three-color:rgb(120, 120, 133);
+}
+body{
+    max-width: 1240px;
+    margin: 0 auto;
+    font-family: Work Sans;
+}
+/* share style */
+.display-flex{
+    display:flex;
+}
+
+.nav-bar{
+    /* display: flex; */
+    justify-content: space-around;
+    margin: 0;
+    padding: 20px;
+
+
+}
+.brand-name{
+    color: var(--dark-one-color);
+    font-family: Work Sans;
+    font-size: 2.188rem;
+    font-weight: 400;
+    text-align: center;
+    /* margin: 0px; */
+}
+.navlist{
+gap: 30px ;
+margin-top: 35px;
+}
+.navlist li{
+    list-style: none;
+
+}
+.navlist li> a{
+    text-decoration: none;
+   color: rgb(66, 66, 66);
+}
+/* header section introduction */
+.introduction{
+flex-direction: row;
+justify-content: space-around;
+margin-bottom: 150px;
+}
+.introduction-text-content{
+ /* margin-left: 45px; */
+}
+.introduction-heading{
+color: var(--dark-one-color);
+font-family: Poppins;
+font-size: 3rem;
+font-weight: 700;
+line-height: 3.8rem;
+letter-spacing: 0px;
+text-align: left;
+margin: 0px;
+width: 480px;
+margin-left: 0;
+}
+.introduction-text{
+    color: var(--dark-one-color);
+    font-family: Poppins;
+    font-size: 0.8rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+    letter-spacing: 0px;
+    text-align: left;
+    margin: 0px;
+    width: 480px;
+}
+.primary-button{
+border-radius: 41px;
+ background: rgb(224, 44, 109);
+display: flex;
+flex-direction: row;
+justify-content: flex-start;
+align-items: flex-start;
+gap: 8;
+padding: 10px 24px 10px 24px;
+color: rgb(225, 225, 225);
+font-weight: 700;
+border: 0;
+margin-top: 30px;
+}
+.introduction-image{
+}
+.introduction-image img{
+background: url(./images/Circle\ design.svg);
+background-size: cover;
+}
+
