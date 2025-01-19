@@ -10,9 +10,6 @@ body{
     margin: 0 auto;
     font-family: Poppins;
 }
-.hide{
-    display: none;
-}
 /* share style */
 .display-flex{
     display:flex;
@@ -22,9 +19,6 @@ body{
     /* display: flex; */
     justify-content: space-around;
     margin: 0;
-    
-
-
 }
 .brand-name{
     color: var(--dark-one-color);
@@ -110,6 +104,12 @@ background-size: cover;
     .navlist{
         flex-direction: row;
         
+    }
+    .brand-name{
+       position: sticky;
+       z-index: 1000;
+       top: 0;
+       background-color: aliceblue;
     }
     .introduction{
         flex-direction: column-reverse;
