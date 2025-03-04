@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,214 +8,238 @@
     <link rel="shortcut icon" href="./images/react.png" type="image/x-icon">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0/themes.css" rel="stylesheet" type="text/css" />
     <script src="https://kit.fontawesome.com/0a66543886.js" crossorigin="anonymous"></script>
     <style>
 
     </style>
 </head>
+
 <body>
- <header class="">
-    <div class="nav-bar display-flex">
-        <h3 class="brand-name  ">Influencer products</h3>
-        <nav class="navigation-bar ">
-            <ul class="navlist display-flex">
-                <li><a href="">Home</a></li>
-                <li><a href="">Products</a></li>
-                <li><a href="">Sign Up</a></li>
-                <li><a href="">Log IN</a></li>
-                <li><a href=""><i class="fa-solid fa-magnifying-glass"> </i></a></li>
-                <li><a href=""><i class="fa-solid fa-cart-shopping"></i> </a></li>
-            </ul>
-        </nav>
-       </div>
-       <section class="introduction display-flex">
-        <div class="introduction-text-content">
-            <h1 class="introduction-heading">Start your Journey as 
-                Influencer</h1>
-            <p class="introduction-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sem vestibulum sed scelerisque eros. Lectus faucibus.</p>
-            <button class="primary-button">Preebook now <img src="/images/arrow-right-line.png" alt=""></button>
+    <header class="">
+        <div class="nav-bar display-flex">
+            <h3 class="brand-name  ">Influencer products</h3>
+            <nav class="navigation-bar ">
+                <ul class="navlist display-flex">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Products</a></li>
+                    <li><a href="">Sign Up</a></li>
+                    <li><a href="">Log IN</a></li>
+                    <li><a href=""><i class="fa-solid fa-magnifying-glass"> </i></a></li>
+                    <li  class="cursor-pointer" id="shopping"><p class="relative"><i class="fa-solid fa-cart-shopping"><span id="cart-icon" class="absolute -top-1 ">0</span></i> </p></li>
+                </ul>
+            </nav>
         </div>
-        <div class="introduction-image">
-            <img src="./images/main-camera.png" alt="camera">
-        </div>
-       </section>
- </header>   
- <main>
-    <section class="logos display-flex">
-        <div class="web-logo display-flex">
-            <div class="image-content-second-section"><img src="./logos/Alibaba.svg" alt=""></div>
-            <div class="image-content-second-section"><img src="./logos/Amazon.svg" alt=""></div>
-            <div class="image-content-second-section"><img src="./logos/Daraz.pk Logo.svg" alt=""></div>
-            <div class="image-content-second-section"><img src="./logos/Ebay.svg" alt=""></div>
-            <div class="image-content-second-section"><img src="./logos/Rakuten.svg" alt=""></div>
-            <div class="image-content-second-section"><img src="./logos/Target.svg" alt=""></div>
-            <div class="image-content-second-section"><img src="./logos/Walmart.svg" alt=""></div>
-        </div>
-    </section> 
-    <section class="populer-collection">
-        <h2 class="popular-heading">Popular Collection</h2>
-        <div class="card-box">
-        <div class="card-content"> <!--trypod-->
-            <div class="card-image"><img src="./images/tripod.png " alt=""></div>
-            <h1 class="card-heading">Flex Tripod</h1>
-            <h3 class="card-price">20.50$</h3>
-            <div class="rating">
-                <i class="fa fa-star checked"></i>
-                <i class="fa fa-star checked"></i>
-                <i class="fa fa-star checked"></i>
-                <i class="fa fa-star-half-alt checked"></i>
-                <i class="fa fa-star checked-non"></i>
-                <span>3.5</span>
+        <section class="introduction display-flex">
+            <div class="introduction-text-content">
+                <h1 class="introduction-heading">Start your Journey as
+                    Influencer</h1>
+                <p class="introduction-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sem vestibulum sed
+                    scelerisque eros. Lectus faucibus.</p>
+                <button class="primary-button">Preebook now <img src="/images/arrow-right-line.png" alt=""></button>
             </div>
-            <p class="card-text">Wordwide shifting available <br>
-                Buyers protection possible!</p>
-        </div>
-        <div class="card-content"> <!--microphone-->
-            <div class="card-image"><img src="./images/mic.png " alt=""></div>
-            <h1 class="card-heading">Microphone</h1>
-            <h3 class="card-price">200.50$</h3>
-            <div class="rating">
-                <i class="fa fa-star checked"></i>
-                <i class="fa fa-star checked"></i>
-                <i class="fa fa-star checked"></i>
-                <i class="fa fa-star-half-alt checked"></i>
-                <i class="fa fa-star checked-non"></i>
-                <span>3.5</span>
+            <div class="introduction-image">
+                <img src="./images/main-camera.png" alt="camera">
             </div>
-            <p class="card-text">Wordwide shifting available <br>
-                Buyers protection possible!</p>
-        </div>
-        <div class="card-content"> <!--Airbuds-->
-            <div class="card-image"><img src="./images/airpod.png " alt=""></div>
-            <h1 class="card-heading">Airbuds</h1>
-            <h3 class="card-price">120.70$</h3>
-            <div class="rating">
-                <i class="fa fa-star checked"></i>
-                <i class="fa fa-star checked"></i>
-                <i class="fa fa-star checked"></i>
-                <i class="fa fa-star checked"></i>
-                <i class="fa fa-star-half-alt checked"></i>
-                <span>4.5</span>
+        </section>
+    </header>
+    <main>
+        <section class="logos display-flex">
+            <div class="web-logo display-flex">
+                <div class="image-content-second-section"><img src="./logos/Alibaba.svg" alt=""></div>
+                <div class="image-content-second-section"><img src="./logos/Amazon.svg" alt=""></div>
+                <div class="image-content-second-section"><img src="./logos/Daraz.pk Logo.svg" alt=""></div>
+                <div class="image-content-second-section"><img src="./logos/Ebay.svg" alt=""></div>
+                <div class="image-content-second-section"><img src="./logos/Rakuten.svg" alt=""></div>
+                <div class="image-content-second-section"><img src="./logos/Target.svg" alt=""></div>
+                <div class="image-content-second-section"><img src="./logos/Walmart.svg" alt=""></div>
             </div>
-            <p class="card-text">Wordwide shifting available <br>
-                Buyers protection possible!</p>
-        </div>
-        <div class="card-content"> <!--drone-->
-            <div class="card-image"><img src="./images/drone.png " alt=""></div>
-            <h1 class="card-heading">Airbuds</h1>
-            <h3 class="card-price">1020$</h3>
-            <div class="rating">
-                <i class="fa fa-star checked"></i>
-                <i class="fa fa-star checked"></i>
-                <i class="fa fa-star checked"></i>
-                <i class="fa fa-star checked"></i>
-                <i class="fa fa-star checked"></i>
-                <span>5</span>
+        </section>
+        <section id="popular-collection" class="populer-collection">
+            <h2 class="popular-heading">Popular Collection</h2>
+            <div class="card-box">
+                <div class="card-content"> <!--trypod-->
+                    <div class="card-image"><img src="./images/tripod.png " alt=""></div>
+                    <h1 class="card-heading">Flex Tripod</h1>
+                    <h3 class="card-price">20.50$</h3>
+                    <div class="rating">
+                        <i class="fa fa-star checked"></i>
+                        <i class="fa fa-star checked"></i>
+                        <i class="fa fa-star checked"></i>
+                        <i class="fa fa-star-half-alt checked"></i>
+                        <i class="fa fa-star checked-non"></i>
+                        <span>3.5</span>
+                    </div>
+                    <p class="card-text">Wordwide shifting available <br>
+                        Buyers protection possible!</p>
+                    <div class="button-container"><button class="buy-button">Buy</button></div>
+                </div>
+                <div class="card-content"> <!--microphone-->
+                    <div class="card-image"><img src="./images/mic.png " alt=""></div>
+                    <h1 class="card-heading">Microphone</h1>
+                    <h3 class="card-price">200.50$</h3>
+                    <div class="rating">
+                        <i class="fa fa-star checked"></i>
+                        <i class="fa fa-star checked"></i>
+                        <i class="fa fa-star checked"></i>
+                        <i class="fa fa-star-half-alt checked"></i>
+                        <i class="fa fa-star checked-non"></i>
+                        <span>3.5</span>
+                    </div>
+                    <p class="card-text">Wordwide shifting available <br>
+                        Buyers protection possible!</p>
+                    <div class="button-container"><button class="buy-button">Buy</button></div>
+                </div>
+                <div class="card-content"> <!--Airbuds-->
+                    <div class="card-image"><img src="./images/airpod.png " alt=""></div>
+                    <h1 class="card-heading">Airbuds</h1>
+                    <h3 class="card-price">120.70$</h3>
+                    <div class="rating">
+                        <i class="fa fa-star checked"></i>
+                        <i class="fa fa-star checked"></i>
+                        <i class="fa fa-star checked"></i>
+                        <i class="fa fa-star checked"></i>
+                        <i class="fa fa-star-half-alt checked"></i>
+                        <span>4.5</span>
+                    </div>
+                    <p class="card-text">Wordwide shifting available <br>
+                        Buyers protection possible!</p>
+                    <div class="button-container"><button class="buy-button">Buy</button></div>
+                </div>
+                <div class="card-content"> <!--drone-->
+                    <div class="card-image"><img src="./images/drone.png " alt=""></div>
+                    <h1 class="card-heading">Airbuds</h1>
+                    <h3 class="card-price">1020$</h3>
+                    <div class="rating">
+                        <i class="fa fa-star checked"></i>
+                        <i class="fa fa-star checked"></i>
+                        <i class="fa fa-star checked"></i>
+                        <i class="fa fa-star checked"></i>
+                        <i class="fa fa-star checked"></i>
+                        <span>5</span>
+                    </div>
+                    <p class="card-text">Wordwide shifting available <br>
+                        Buyers protection possible!</p>
+                    <div class="button-container"><button class="buy-button">Buy</button></div>
+                </div>
+                <div class="card-content"> <!--light-setup-->
+                    <div class="card-image"><img src="./images/lights.png " alt=""></div>
+                    <h1 class="card-heading">Light-Set UP</h1>
+                    <h3 class="card-price">120$</h3>
+                    <div class="rating">
+                        <i class="fa fa-star checked"></i>
+                        <i class="fa fa-star checked"></i>
+                        <i class="fa fa-star checked"></i>
+                        <i class="fa fa-star checked"></i>
+                        <i class="fa fa-star checked"></i>
+                        <span>5</span>
+                    </div>
+                    <p class="card-text">Wordwide shifting available <br>
+                        Buyers protection possible!</p>
+                    <div class="button-container"><button class="buy-button">Buy</button></div>
+                </div>
+                <div class="card-content"> <!--photo set-->
+                    <div class="card-image"><img src="./images/setup.png " alt=""></div>
+                    <h1 class="card-heading">Photo Set Up</h1>
+                    <h3 class="card-price">320$</h3>
+                    <div class="rating">
+                        <i class="fa fa-star checked"></i>
+                        <i class="fa fa-star checked"></i>
+                        <i class="fa fa-star checked"></i>
+                        <i class="fa fa-star checked"></i>
+                        <i class="fa fa-star checked"></i>
+                        <span>5</span>
+                    </div>
+                    <p class="card-text">Wordwide shifting available <br>
+                        Buyers protection possible!</p>
+                    <div class="button-container"><button class="buy-button">Buy</button></div>
+                </div>
+                <div class="card-content"> <!--vlogging camera-->
+                    <div class="card-image"><img src="./images/camera.png " alt=""></div>
+                    <h1 class="card-heading">Camera</h1>
+                    <h3 class="card-price">30 020$</h3>
+                    <div class="rating">
+                        <i class="fa fa-star checked"></i>
+                        <i class="fa fa-star checked"></i>
+                        <i class="fa fa-star checked"></i>
+                        <i class="fa fa-star checked"></i>
+                        <i class="fa fa-star checked"></i>
+                        <span>5</span>
+                    </div>
+                    <p class="card-text">Wordwide shifting available <br>
+                        Buyers protection possible!</p>
+                    <div class="button-container"><button class="buy-button">Buy</button></div>
+                </div>
+                <div class="card-content"> <!--green screen-->
+                    <div class="card-image"><img src="./images/single-light.png" alt=""></div>
+                    <h1 class="card-heading">Green Scren</h1>
+                    <h3 class="card-price">20$</h3>
+                    <div class="rating">
+                        <i class="fa fa-star checked"></i>
+                        <i class="fa fa-star checked"></i>
+                        <i class="fa fa-star checked"></i>
+                        <i class="fa fa-star checked"></i>
+                        <i class="fa fa-star checked"></i>
+                        <span>5</span>
+                    </div>
+                    <p class="card-text">Wordwide shifting available <br>
+                        Buyers protection possible!</p>
+                    <div class="button-container"><button class="buy-button">Buy</button></div>
+                </div>
+                <div class="card-content"> <!--action camera-->
+                    <div class="card-image"><img src="./images/action.png" alt=""></div>
+                    <h1 class="card-heading">Action Camera</h1>
+                    <h3 class="card-price">420.80$</h3>
+                    <div class="rating">
+                        <i class="fa fa-star checked"></i>
+                        <i class="fa fa-star checked"></i>
+                        <i class="fa fa-star checked"></i>
+                        <i class="fa fa-star checked"></i>
+                        <i class="fa fa-star checked"></i>
+                        <span>5</span>
+                    </div>
+                    <p class="card-text">Wordwide shifting available <br>
+                        Buyers protection possible!</p>
+                    <div class="button-container"><button class="buy-button">Buy</button></div>
+                </div>
             </div>
-            <p class="card-text">Wordwide shifting available <br>
-                Buyers protection possible!</p>
-        </div>
-        <div class="card-content"> <!--light-setup-->
-            <div class="card-image"><img src="./images/lights.png " alt=""></div>
-            <h1 class="card-heading">Light-Set UP</h1>
-            <h3 class="card-price">120$</h3>
-            <div class="rating">
-                <i class="fa fa-star checked"></i>
-                <i class="fa fa-star checked"></i>
-                <i class="fa fa-star checked"></i>
-                <i class="fa fa-star checked"></i>
-                <i class="fa fa-star checked"></i>
-                <span>5</span>
+            <h5 class="see">See More <img src="./images/arrow-right-line.png" alt=""></h5>
+        </section>
+        <section class="features display-flex">
+            <div class="features-image">
+                <img src="./images/gear.png" alt="">
             </div>
-            <p class="card-text">Wordwide shifting available <br>
-                Buyers protection possible!</p>
-        </div>
-        <div class="card-content"> <!--photo set-->
-            <div class="card-image"><img src="./images/setup.png " alt=""></div>
-            <h1 class="card-heading">Photo Set Up</h1>
-            <h3 class="card-price">320$</h3>
-            <div class="rating">
-                <i class="fa fa-star checked"></i>
-                <i class="fa fa-star checked"></i>
-                <i class="fa fa-star checked"></i>
-                <i class="fa fa-star checked"></i>
-                <i class="fa fa-star checked"></i>
-                <span>5</span>
+            <div class="features-text-content">
+                <h1 class="features-heading">Featured products at one place</h1>
+                <p class="features-text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
+                    officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                <button class="primary-button">Join Now <img src="/images/arrow-right-line.png" alt=""></button>
             </div>
-            <p class="card-text">Wordwide shifting available <br>
-                Buyers protection possible!</p>
-        </div>
-        <div class="card-content"> <!--vlogging camera-->
-            <div class="card-image"><img src="./images/camera.png " alt=""></div>
-            <h1 class="card-heading">Camera</h1>
-            <h3 class="card-price">30 020$</h3>
-            <div class="rating">
-                <i class="fa fa-star checked"></i>
-                <i class="fa fa-star checked"></i>
-                <i class="fa fa-star checked"></i>
-                <i class="fa fa-star checked"></i>
-                <i class="fa fa-star checked"></i>
-                <span>5</span>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <h4 class="footer-heading">Influencer products</h4>
+            <p class="footer-text">Copyright &copy;2020 influencer products All rights reserved</p>
+            <div class="logoimage-footer">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-solid fa-globe"></i>
+                <i class="fa-brands fa-x-twitter"></i>
             </div>
-            <p class="card-text">Wordwide shifting available <br>
-                Buyers protection possible!</p>
         </div>
-        <div class="card-content"> <!--green screen-->
-            <div class="card-image"><img src="./images/single-light.png" alt=""></div>
-            <h1 class="card-heading">Green Scren</h1>
-            <h3 class="card-price">20$</h3>
-            <div class="rating">
-                <i class="fa fa-star checked"></i>
-                <i class="fa fa-star checked"></i>
-                <i class="fa fa-star checked"></i>
-                <i class="fa fa-star checked"></i>
-                <i class="fa fa-star checked"></i>
-                <span>5</span>
-            </div>
-            <p class="card-text">Wordwide shifting available <br>
-                Buyers protection possible!</p>
-        </div>
-        <div class="card-content"> <!--action camera-->
-            <div class="card-image"><img src="./images/action.png" alt=""></div>
-            <h1 class="card-heading">Action Camera</h1>
-            <h3 class="card-price">420.80$</h3>
-            <div class="rating">
-                <i class="fa fa-star checked"></i>
-                <i class="fa fa-star checked"></i>
-                <i class="fa fa-star checked"></i>
-                <i class="fa fa-star checked"></i>
-                <i class="fa fa-star checked"></i>
-                <span>5</span>
-            </div>
-            <p class="card-text">Wordwide shifting available <br>
-                Buyers protection possible!</p>
+    </footer>
+    <div id="pop-up" class="hidden fixed top-16 inset-0 flex justify-end">
+        <div class="bg-white px-6 h-max rounded-lg shadow-sm  ">
+            <h3 class="font-medium"> <span class="mx-1" id="total-added-itmes"> </span>Itmes added</h3>
+            <p class="my-3">Total <span id="total-price">0</span></p>
+            <button id="continue" class="px-4 rounded-lg btn ghost-btn mb-6   py-2">Continue</button>
         </div>
     </div>
-    <h5 class="see">See More <img src="./images/arrow-right-line.png" alt=""></h5>
-    </section>
-    <section class="features display-flex">
-        <div class="features-image">
-            <img src="./images/gear.png" alt="">
-        </div>
-        <div class="features-text-content">
-            <h1 class="features-heading">Featured products at one place</h1>
-            <p class="features-text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-            <button class="primary-button">Join Now <img src="/images/arrow-right-line.png" alt=""></button>
-        </div>   
-    </section>
- </main>
- <footer>
-    <div class="footer-content">
-        <h4 class="footer-heading">Influencer products</h4>
-        <p class="footer-text">Copyright &copy;2020  influencer products All rights reserved</p>
-        <div class="logoimage-footer">
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-solid fa-globe"></i>
-            <i class="fa-brands fa-x-twitter"></i>
-        </div>
-    </div>
- </footer>
+    <script src="./script.js"></script>
 </body>
+
 </html>
